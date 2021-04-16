@@ -1,10 +1,11 @@
+import _02_noneness_support_file as db
 def find_accounts(search_text):
     # perform search...
-    if not db_is_available:
+    if not db.is_available:
         return None
 
     # returns a list of account IDs
-    return db_search(search_text)
+    return db.search(search_text)
 
 accounts = find_accounts('python')
 if accounts is None:
@@ -34,7 +35,4 @@ else:
 
 
 
-def db_search(search_text):
-    return [1, 11]
 
-db_is_availble = True
