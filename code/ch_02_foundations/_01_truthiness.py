@@ -36,10 +36,9 @@ class AClass:
     def __bool__(self):
         return True if self.data else False
 
+
 a = AClass()
 
 print_truthiness("Empty AClass", a)
 a.add("Thing")
 print_truthiness("nonempty AClass", a)
-
-

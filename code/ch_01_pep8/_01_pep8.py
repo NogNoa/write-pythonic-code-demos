@@ -21,12 +21,12 @@ def some_method(a1, a2, a3):
     :param a3: Should reverse
     :return: 1 or 2
     """
-    x = 1
+    x = a1
 
-    if x > 2:
-        return 1
+    if x > a2:
+        return a1
     else:
-        return 2
+        return a2
 
 
 some_method(1, 1, 2)
@@ -47,23 +47,8 @@ def other_method3():
 s = "Text"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Use 4 spaces per indentation level.
-# spaces, never tabs
+# Spaces, never tabs
 def method():
     four_spaces_indented = True
     more_vars = 1
@@ -72,7 +57,7 @@ def method():
 # Limit all lines to a maximum of 79 characters.
 text = "This is a string which is longer than 79 characters. This is not encouraged but will execute and run OK."
 
-# blank lines
+# Blank lines
 # Surround top-level function and class definitions with two blank lines.
 # Method definitions inside a class are surrounded by a single blank line.
 # Use blank lines in functions, sparingly, to indicate logical sections.
@@ -85,7 +70,7 @@ text = "This is a string which is longer than 79 characters. This is not encoura
 # Class names should normally use the CapWords convention.
 
 # Because exceptions should be classes, the class naming convention
-# applies here. However, you should use the suffix "Error"
+# applies here. However, you should use the suffix “Error”
 
 # Function names should be lowercase, with words separated by
 # underscores as necessary to improve readability.
@@ -101,14 +86,6 @@ text = "This is a string which is longer than 79 characters. This is not encoura
 # Constants are usually defined on a module level and written in all capital
 # letters with underscores separating words. Examples include MAX_OVERFLOW and
 # TOTAL.
-
-
-
-
-
-
-
-
 
 
 # ******** Part 1 - Imports **************************
@@ -143,22 +120,11 @@ from os import chdir, chflags, chown
 # no: import collections, os, multiprocessing
 
 
-
-
-
-
-
-
-
-
 # There meaningless lines are here to prevent PyCharm from warning about
 # unused imports and such. We want to see real warnings only. In a
 # legitimate app, those other warnings would be useful but not here.
-s = sys
-o = os
-m = multiprocessing
-z = path
-z = chmod
-z = chown
-m = mean
+
+z = chflags
+d = chdir
+o = chown
 c = collections
